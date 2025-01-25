@@ -29,28 +29,3 @@ function getInputValues() {
 function displayResult(result) {
   document.getElementById("calculation-result").textContent = result;
 }
-
-// Add event listeners for each operation
-document.getElementById("add").addEventListener("click", function () {
-  const { number1, number2 } = getInputValues();
-  const result = add(number1, number2);
-  displayResult(result);
-});
-
-document.getElementById("subtract").addEventListener("click", function () {
-  const { number1, number2 } = getInputValues();
-  const result = subtract(number1, number2);
-  displayResult(result);
-});
-
-document.getElementById("multiply").addEventListener("click", function () {
-  const { number1, number2 } = getInputValues();
-  const result = multiply(number1, number2);
-  displayResult(result);
-});
-
-document.getElementById("divide").addEventListener("click", function () {
-  const { number1, number2 } = getInputValues();
-  const result = divide(number1, number2);
-  displayResult(result);
-});
